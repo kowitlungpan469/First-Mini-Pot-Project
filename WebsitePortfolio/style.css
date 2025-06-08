@@ -1,0 +1,163 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+
+}
+
+body {
+
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(218, 95, 255);
+  }
+
+  .list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 15px;
+
+  }
+
+  .list-a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: color 0.24s, transform 0.1s;
+
+      &:hover {
+        color: rgb(174, 0, 255);
+        transform: scale(1.1);
+      }
+
+      &:active {
+        color: rgb(138, 2, 201);
+      }
+
+      &::after {
+        background-color: purple;
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+  }
+
+  .logo {
+
+      a>img {
+        border: 3px solid #eee;
+        border-radius: 100%;
+        width: 52px;
+        height: 52px;
+        object-fit: cover;
+        margin-top: 7px;
+        margin-left: 5px;
+        transition: scale 0.3s;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      }
+  }
+
+    .contect-container {
+    margin-top: 30px;
+
+    .conect-tag-h-text {
+    text-align: left;
+    padding: 2px 250px;
+    margin-left: 190px;
+      h2 {
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+  }
+
+  .contect-icon-group {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    padding: 2px 100px;
+    margin-left: 180px;
+  }
+
+  .icon-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  .icon-group li {
+    display: inline-block;
+  }
+
+  .icon-group img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .icon-group img:hover {
+    transform: scale(1.1);
+  }
+
+  .profile {
+    img {
+      float: left;
+      object-fit: cover;
+      border-radius: 12%;
+      width: 350px;
+      height: 500px;
+      padding: 10px 10px;
+      margin: 10px 10px;
+      margin-top: 14px;
+      margin-left: 24px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .content {
+    h1,h2,p {
+      padding: 2px 200px;
+      margin-left: 240px;
+    }
+
+    h1 {
+      margin-top: 12px;
+      font-family: 'Manrope', sans-serif;
+    }
+    h2 {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    p {
+      font-family: 'Manrope', sans-serif;
+    }
+  }
